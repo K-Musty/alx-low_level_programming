@@ -56,7 +56,7 @@ char *_strcpy(char *dest, char *src)
  * @age: the age of the dog
  * @owner: the owner of the dog
  *
- * Return: the pointer to the new dog 
+ * Return: the pointer to the new dog
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
