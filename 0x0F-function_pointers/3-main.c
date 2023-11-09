@@ -30,7 +30,7 @@ int main(int argc, char **argv)
 		exit(99);
 	}
 
-	if (!b && (argv[2][0] == '/' || argv[2][0] == '%'))
+	if (!n && (argv[2][0] == '/' || argv[2][0] == '%'))
 		printf("Error\n"), exit(100);
 
 	printf("%d\n", func(m, n));
