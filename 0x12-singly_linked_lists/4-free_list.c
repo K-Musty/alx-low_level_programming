@@ -6,11 +6,12 @@
  */
 void free_list(list_t *head)
 {
-	if (head)
+	list_t *real_node;
+
+	while ((real_node = head) != NULL)
 	{
-		free_list(head->next);
-		if (head->str)
-			free(head->str);
-		free(head);
+		head = (*head).next;
+		free((*real_node).str);
+		free(real_node);
 	}
 }
